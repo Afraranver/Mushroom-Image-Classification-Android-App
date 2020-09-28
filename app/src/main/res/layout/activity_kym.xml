@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kym">
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@color/common_google_signin_btn_text_dark_default"
+        app:itemTextColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="617dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/bot_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/allerta"
+                android:text="Know Your Mushrooms"
+                android:textColor="#0E0E0E"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.01999998" />
+
+
+            <TextView
+                android:id="@+id/edibletit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Edible Mushrooms"
+                android:textColor="#278A2A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/oystitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Oyster Mushroom"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/oys"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/oystermushrooms" />
+
+            <TextView
+                android:id="@+id/oysdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/oysinfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/fmtit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Field Mushroom"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/fm"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/fieldmush" />
+
+            <TextView
+                android:id="@+id/fmdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/fminfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/agtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Agaricus bisporus (button mushroom)"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/ag"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/buttonmushrooms" />
+
+            <TextView
+                android:id="@+id/shides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/aginfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/shititle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Shiitake mushroom"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/shi"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/shiitakemushrooms" />
+
+            <TextView
+                android:id="@+id/shiides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/shiinfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/ktmtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="King trumpet Mushroom"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/ktm"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/kingtrumpet" />
+
+            <TextView
+                android:id="@+id/ktmdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/ktminfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/hmtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Hen of the Woods"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/hm"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/henofthewoods" />
+
+            <TextView
+                android:id="@+id/hmdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/hminfo"
+                android:textColor="#0C0B0B" />
+
+
+            <TextView
+                android:id="@+id/inedibletit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Inedible Mushrooms"
+                android:textColor="#278A2A"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/avtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Amanita virosa"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/av"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/amanitavirosa" />
+
+            <TextView
+                android:id="@+id/avdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/avinfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/gmtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Galerina marginata"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/gm"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/galerinamarginata" />
+
+            <TextView
+                android:id="@+id/gmdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/gminfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/hftitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Hypholoma fasciculare"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/hf"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/hypholomafasciculare" />
+
+            <TextView
+                android:id="@+id/hfdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="@string/hfinfo"
+                android:textColor="#0C0B0B" />
+
+            <TextView
+                android:id="@+id/cmtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#050505"
+                android:fontFamily="@font/allerta"
+                android:text="Chlorophyllum molybdites"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/cm"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/chlorophyllummolybdites" />
+
+            <TextView
+                android:id="@+id/cmdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:layout_marginBottom="80dp"
+                android:text="@string/cminfo"
+                android:textColor="#0C0B0B" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
